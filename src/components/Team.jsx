@@ -116,7 +116,7 @@ const handleClick = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin cursor={"pointer"} size={"2vw"} />
+              <FaLinkedin className="text-[2vw]" cursor={"pointer"} />
             </a>
           )}
           </div>

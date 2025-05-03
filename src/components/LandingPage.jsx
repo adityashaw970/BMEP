@@ -34,6 +34,7 @@ export default function LandingPage() {
 
   useEffect(() => {
     // Landing Page Animation
+   if(window.innerWidth >=1024){
     document.querySelectorAll(".elem").forEach((elem) => {
       let image = elem.querySelector("img");
       let tl = gsap.timeline();
@@ -65,6 +66,8 @@ export default function LandingPage() {
           },
         }, "start");
     });
+
+   }
   }, []);
 
   useEffect(()=>{
