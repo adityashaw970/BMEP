@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+
+
+@font-face {
+    font-family: GillM;
+    src: url("./../gilroy/Gilroy-Medium.ttf");
+  }@font-face {
+    font-family: GillB;
+    src: url("./../gilroy/Gilroy-SemiBold.ttf");
+  }@font-face {
+    font-family: GillL;
+    src: url("./..//gilroy/Gilroy-Light.ttf");
+  }
+  @font-face {
+    font-family: GillI;
+    src: url("./../gilroy/Gilroy-RegularItalic.ttf");
+  }
+  @font-face {
+    font-family: KG;
+    src: url("./../kg-blank-space/KGBlankSpace/KGBlankSpaceSketch.ttf");
+  }
+  
+
+  
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background:black;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: white;
+}
