@@ -1,4 +1,5 @@
 
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { FaLinkedin } from "react-icons/fa";
 
@@ -114,9 +115,9 @@ const FullTeam = () => {
     },
   ];
  
-
+  const navigate = useNavigate();
   const handleClick = () => {
-    window.close("/");
+    navigate("/")
   }; 
   const [hoveredIndex, setHoveredIndex] = useState(null);
   

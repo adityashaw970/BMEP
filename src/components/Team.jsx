@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import { FaLinkedin } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Team = () => {
   const data = [
@@ -43,9 +44,13 @@ const Team = () => {
         linkedin: "https://www.linkedin.com/in/harshgo?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       },
   ]
-  const handleClick = () => {
-    window.open("/team","_blank");
+
+const navigate = useNavigate();
+
+const handleClick = () => {
+  navigate("/team");
 };
+
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [hoveredIndex1, setHoveredIndex1] = useState(null);
 
