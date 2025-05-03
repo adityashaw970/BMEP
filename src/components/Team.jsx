@@ -1,7 +1,6 @@
 
 import { useState } from "react";
 import { FaLinkedin } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
 
 const Team = () => {
   const data = [
@@ -45,10 +44,9 @@ const Team = () => {
       },
   ]
 
-const navigate = useNavigate();
 
 const handleClick = () => {
-  navigate("/team");
+  window.location.href="/team";
 };
 
   const [hoveredIndex, setHoveredIndex] = useState(null);
