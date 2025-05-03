@@ -46,7 +46,7 @@ const Team = () => {
 
 
 const handleClick = () => {
-  window.open("/team");
+  window.open("/team","_blank");
 };
 
   const [hoveredIndex, setHoveredIndex] = useState(null);
